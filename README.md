@@ -29,3 +29,15 @@ Start docker container with nginx using docker-compose
 ##Lesson 3##
 
 Start composition of two docker containers, one with php, second with nginx using docker-compose
+
+##Lesson 4##
+
+Start composition of three docker containers. 
+
+One with php from clockwise/docker-phpunit-alpain:fpm 
+
+Second with nginx 
+
+Third with redis 
+
+Using docker-compose and 
