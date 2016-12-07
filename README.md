@@ -2,7 +2,7 @@
 
 You need to install just 2 things
 
-1. [Virtual box](https://www.virtualbox.org/wiki/Downloads)
+1. [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 2. [vagrant](https://www.vagrantup.com/downloads.html)
 
 After install both run in command line this (installing [hostmanager](https://github.com/devopsgroup-io/vagrant-hostmanager) plugin for vagrant):
