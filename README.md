@@ -34,10 +34,8 @@ Start composition of two docker containers, one with php, second with nginx usin
 
 Start composition of three docker containers. 
 
-One with php from clockwise/docker-phpunit-alpain:fpm 
+- php from clockwise/docker-phpunit-alpain:fpm 
+- nginx 
+- redis 
 
-Second with nginx 
-
-Third with redis 
-
-Using docker-compose and 
+Using docker-compose and see in app.php how it works together 
