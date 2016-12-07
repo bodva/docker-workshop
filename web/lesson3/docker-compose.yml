@@ -5,7 +5,7 @@ services:
             context: ./
             dockerfile: conf/web.docker
         volumes:
-            - /var/www/example:/var/www
+            - /home/vagrant/example:/var/www
         ports:
             - "8080:80"
         links:
@@ -15,4 +15,4 @@ services:
             context: ./
             dockerfile: conf/app.docker
         volumes:
-            - /var/www/example:/var/www
+            - /home/vagrant/example:/var/www

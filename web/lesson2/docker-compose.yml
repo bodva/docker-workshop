@@ -5,6 +5,6 @@ services:
             context: ./
             dockerfile: Dockerfile
         volumes:
-            - /var/www/example:/var/www
+            - /home/vagrant/example:/var/www
         ports:
             - "8080:80"

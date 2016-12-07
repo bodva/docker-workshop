@@ -28,7 +28,7 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |vb, override|
     vb.customize ["modifyvm", :id, "--memory", "2024"]
     vb.customize ["modifyvm", :id, "--cpus", "2"]
-    override.vm.synced_folder "./web", "/var/www", nfs: true
+    override.vm.synced_folder "./web", "/home/vagrant", nfs: true
     override.nfs.map_uid = Process.uid
     override.nfs.map_gid = Process.gid
   end

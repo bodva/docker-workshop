@@ -14,6 +14,7 @@ $redis = new Predis\Client([
 echo "Connected to Redis <br/>";
 
 $value = $redis->get("foo");
+var_dump($value);
 $redis->set("foo", "bar");
 $value = $redis->get("foo");
 var_dump($value);
