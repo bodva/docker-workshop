@@ -1,6 +1,7 @@
 ##Requirements##
 
 You need to install just 2 things
+
 1. Virtual box
 2. vagrant
 
