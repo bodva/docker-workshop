@@ -1,0 +1,29 @@
+version: '2'
+services:
+    web:
+        build:
+            context: ./
+            dockerfile: conf/web.docker
+        volumes:
+            - /var/www/example:/var/www
+        ports:
+            - "8080:80"
+        links:
+            - app
+    app:
+        build:
+            context: ./
+            dockerfile: conf/app.docker
+        volumes:
+            - /var/www/example:/var/www
+        environment:
+            - "REDIS_PORT=6379"
+            - "REDIS_HOST=store"
+            - "APP_ENV=develop"
+            - "APP_DEBUG=true"
+        links:
+            - store
+    store:
+        image: redis:3.0
+        ports:
+            - "63791:6379"
