@@ -16,7 +16,19 @@ and this
 vagrant up
 ```
 
-and wait
+and wait until the virtual machine is ready
+
+After all you have vagrant box on in `13.13.13.13` and you can connect to it using 
+
+```
+vagrant ssh
+```
+or
+
+```
+ssh vagrant@13.13.13.13
+```
+with password `vagrant`
 
 ##Lesson 1##
 
